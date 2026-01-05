@@ -24,7 +24,7 @@ If you wish to try alternative ui from Squareline Studio / Squareline Vision / E
 I think this could be really useful - perfect for wifi provisioning and configuration in general.
 Also, because the wifi is left free it could make a great pc-espnow gateway and many other types of bridge.
 
-It would be more efficient to use Emscripten to serve WebAssembly and have all the LVGL stuff run in the browser (I'll try that next) but this approach is maybe useful as all the business code is running on the esp32 - the html canvas is simply a dumb external screen with mouse / touch callback. Modify index.html to change page background colour and default canvas position offset. Modify favicon.ico to your taste. index.html and favicon.ico are embedded as binaries at build time so no file system is needed for the partition.
+It would be more efficient to use Emscripten to serve WebAssembly and have all the LVGL stuff run in the browser (I'll try that next) but this approach is maybe useful as all the business code is running on the esp32 - the html canvas is simply a dumb external screen with mouse / touch callback. Modify index.html to change page background colour and default canvas position offset. Modify favicon.ico to your taste. index.html and favicon.ico are embedded as binaries at compile time so no file system is needed for the partition.
 
 
 
